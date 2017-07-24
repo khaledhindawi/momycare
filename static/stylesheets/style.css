@@ -11,13 +11,15 @@ h1{
 .nav_bar {
 	border: solid black 5px ;
 }
-.nav_bar li:hover{
-        color: red ;       
+.nav_bar a:hover {
+	color: red ;       
 }
 .nav_bar li { 
 	font-size: 50px;
 	display:inline ;
 	margin: 35px 35px;
-	text-decoration-color: none;
-
 }
+.nav_bar li a{ 
+	text-decoration: none;
+	color: black;
+ }
