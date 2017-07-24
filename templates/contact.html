@@ -1,0 +1,35 @@
+{%extends "layout.html"%}
+
+{%block head%}
+<link rel="stylesheet" type="text/css" href="../static/stylesheets/style.css">
+{%endblock%}
+
+{%block body%}
+<div class="messege">
+	<form action="{{ url_for('form_res') }}" method="post">
+		First name:<br>
+		<input type="text" name="firstname"><br>
+		Last name:<br>
+		<input type="text" name="lastname"><br>
+		Messges:<br>
+		 <textarea  class="bigbox"  type="text" name="messege"> </textarea> <br>
+		inquiries :<br>
+			<textarea  class="bigbox"  type="text" name="inquiries"> </textarea> <br>
+
+
+		 
+		 Baby gender:<br>
+		 <input type="radio"  name="gender" value="male">male<br>
+		 <input type="radio" name="gender" value="female" >female<br>
+		 <input type="radio" name="gender" value="other">other<br>
+
+		 <input type="submit" ><br>
+
+
+	</form>
+	
+
+
+</div>
+
+{%endblock%}

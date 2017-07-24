@@ -21,5 +21,16 @@ def contact():
 
 
 
+@app.route("/form_response",methods=["POST"])
+def form_res():
+	user_firstname=request.form["firstname"]
+	user_lastname=request.form["lastname"]
+	user_Messges=request.form["messege"]
+	user_inquiries=request.form["inquiries"]
+	user_gender=request.form["gender"]
+	return render_template("data.html",thefirstname=user_firstname,
+							thelastname=user_lastname,themessege=user_Messges,thegender=user_gender,theinquiries="user_inquiries")
+
+
 if __name__=="__main__":
-	app.run(port=5050) 
+	app.run(port=50500) 
